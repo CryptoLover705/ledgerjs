@@ -1532,6 +1532,42 @@ const cryptocurrenciesById: { [name: string]: CryptoCurrency } = {
       },
     ],
   },
+  newyorkcoin: {
+    type: "CryptoCurrency",
+    id: "newyorkcoin",
+    coinType: 3,
+    name: "NewYorkcoin",
+    managerAppName: "NewYorkcoin",
+    ticker: "NYC",
+    scheme: "newyorkcoin",
+    color: "#65d196",
+    family: "bitcoin",
+    blockAvgTime: 30,
+    bitcoinLikeInfo: {
+      P2PKH: 60,
+      P2SH: 22,
+      XPUBVersion: 0x0488b21e,
+    },
+    symbol: "NYC",
+    units: [
+      {
+        name: "newyorkcoin",
+        code: "NYC",
+        magnitude: 8,
+      },
+      {
+        name: "satoshi",
+        code: "sat",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://explorer.nycoin.community/tx/$hash",
+        address: "https://explorer.nycoin.community/ext/getaddress/$address",
+      },
+    ],
+  },
   nimiq: {
     type: "CryptoCurrency",
     id: "nimiq",
